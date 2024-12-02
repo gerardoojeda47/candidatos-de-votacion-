@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elección de Representante de Aprendices</title>
+    <link rel="stylesheet" href="eje1.css">
+</head>
+<body>
+    <!-- Formulario de Inicio de Sesión -->
+    <form id="formulario-sesion" style="display: block; width: 300px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2>Iniciar  Sesión</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="button" id="iniciar-sesion" value="Iniciar  Sesión">
+    </form>
+
+    <!-- Contenido principal (oculto hasta iniciar sesión) -->
+    <main id="contenido-principal" style="display: none;">
+        <header>
+            <h1>Elección de Representante de Aprendices</h1>
+            <button id="inicio-elecciones" disabled>Iniciar Elecciones</button>
+            <button id="cierre-elecciones" disabled>Cerrar Elecciones</button>
+        </header>
+        <section id="candidatos">
+            <!-- Interfaz dinámica para candidatos -->
+            <script>
+                // Renderizar candidatos (código JavaScript para renderizar los candidatos)
+                renderizarCandidatos();
+            </script>
+        </section>
+        <section id="resultados" style="display: none;">
+            <!-- Resultados de las elecciones -->
+            <h2>Resultados de las Elecciones</h2>
+            <ul id="lista-resultados"></ul>
+        </section>
+    </main>
+
+    <!-- Ventana de confirmación para votar -->
+    <div id="ventana-confirmacion" style="display: none;">
+        <p>¿Está seguro de votar por este candidato?</p>
+        <button id="confirmar-voto">Sí</button>
+        <button id="cancelar-voto">No</button>
+    </div>
+
+    <script src="eje1.js"></script>
+</body>
+</html>
+
+

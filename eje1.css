@@ -1,0 +1,228 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Formulario de inicio de sesión */
+
+#formulario-sesion {
+    display: block;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-sesion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#formulario-sesion label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formulario-sesion input[type="text"], 
+#formulario-sesion input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-sesion input[type="button"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario-sesion input[type="button"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Contenido principal */
+
+#contenido-principal {
+    display: none;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contenido-principal header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#contenido-principal header h1 {
+    margin: 0;
+}
+
+#contenido-principal #inicio-elecciones, 
+#contenido-principal #cierre-elecciones {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Sección de candidatos */
+
+#candidatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.candidato {
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.candidato img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.candidato h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.candidato p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.candidato p strong {
+    font-weight: bold;
+}
+
+.candidato.votar {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.candidato.votar:hover {
+    background-color: #3e8e41;
+}
+
+/* Ventana de confirmación */
+
+#ventana-confirmacion {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#ventana-confirmacion p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#ventana-confirmacion #confirmar-voto, 
+#ventana-confirmacion #cancelar-voto {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ventana-confirmacion #confirmar-voto:hover, 
+#ventana-confirmacion #cancelar-voto:hover {
+    background-color: #3e8e41;
+}
+
+/* Resultados de las elecciones */
+
+#resultados {
+    display: none;
+    margin-top: 20px;
+}
+
+#resultados h2 {
+    margin-bottom: 10px;
+}
+
+#resultados ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#resultados li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resultados li h3 {
+    margin-top: 0;
+}
+
+#resultados li p {
+    margin-bottom: 10px;
+}
